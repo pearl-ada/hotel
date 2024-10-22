@@ -29,3 +29,29 @@ scrollRevealOption().reveal(".header_container h1",{
     ...scrollRevealOption,
     delay: 500,
 });
+
+//about container
+scrollRevealOption().reveal(".about_image img", {
+    ...scrollRevealOption,
+    orgin: "left",
+});
+
+scrollRevealOption().reveal(".about_content .section_subheader",{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+scrollRevealOption().reveal("..about_content .section_header",{
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+scrollRevealOption().reveal("..about_content .section_description",{
+    ...scrollRevealOption,
+    delay: 1500,
+});
+
+scrollRevealOption().reveal(".about_btn",{
+    ...scrollRevealOption,
+    delay: 2000,
+});

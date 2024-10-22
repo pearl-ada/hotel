@@ -199,6 +199,63 @@ nav{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+.input_group{
+    flex: 1 1 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input_group span{
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+.input_group label{
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+.input_group input{
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    padding-block: 5px;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+}
+
+.input_group input::placeholder{
+    color: var(--text-light);
+}
+
+.about_container{
+    overflow: hidden;
+    display: grid;
+    gap: 2rem;
+}
+
+.about_image img{
+    max-width: 450px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.room_grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.room_card{
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
 @media (width > 768px){
     nav{
         padding: 2rem 1rem;
@@ -243,5 +300,10 @@ nav{
     
     .nav_links a:hover::after {
         width: 100%;
+    }
+
+    .about_container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 }
